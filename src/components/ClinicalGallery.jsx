@@ -7,7 +7,7 @@ const ClinicalGallery = () => {
       title: 'Physician & Practice Advisory',
       category: '1-on-1 Provider Consulting',
       image:
-        'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80',
       description:
         'Personalized guidance for physicians navigating Type 1 NPI enumeration, medical board licensing sync, and clinical scope alignment.',
       icon: Stethoscope,
@@ -17,7 +17,7 @@ const ClinicalGallery = () => {
       title: 'Multi-Specialty Clinical Teams',
       category: 'Provider Onboarding & Integration',
       image:
-        'https://images.unsplash.com/photo-1551076805-e18690c5e561?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1576091160550-2173ff9e5e3c?auto=format&fit=crop&w=800&q=80',
       description:
         'Structuring Type 2 group NPI classifications and subparts for multi-provider clinics, nurse practitioners, and allied care teams.',
       icon: Users,
