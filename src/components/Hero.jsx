@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-b from-[#050C17] via-[#0A1B30] to-[#08182B] text-white"
+      className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-b from-[#0B132B] via-[#0A1B30] to-[#08182B] text-white"
     >
       {/* Elegant, static subtle healthcare gradient accent (100% clean & static, no canvas or dots) */}
       <div 
