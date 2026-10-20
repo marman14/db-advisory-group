@@ -5,19 +5,22 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden bg-cover bg-center text-white"
+      className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden text-white"
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1920&q=80')`,
+        background: `linear-gradient(rgba(11, 19, 43, 0.82), rgba(11, 19, 43, 0.82)), url('https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1920&q=80')`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
       }}
     >
-      {/* Dark Navy Overlay (82% opacity for 100% text legibility) */}
+      {/* Explicit Dark Navy Overlay (82% opacity for 100% text legibility) */}
       <div 
-        className="absolute inset-0 bg-[#0B132B]/82 pointer-events-none" 
+        className="absolute inset-0 pointer-events-none" 
+        style={{ backgroundColor: 'rgba(11, 19, 43, 0.82)' }}
       />
       <div 
-        className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0B132B] to-transparent pointer-events-none" 
+        className="absolute bottom-0 left-0 right-0 h-24 pointer-events-none" 
+        style={{ background: 'linear-gradient(to top, rgba(11, 19, 43, 1), transparent)' }}
       />
 
       {/* Content Container - Breathable, generous whitespace and high contrast */}
@@ -29,8 +32,8 @@ const Hero = () => {
           <span>Premier Healthcare & NPI Consulting • Columbus, GA</span>
         </div>
 
-        {/* Strong Headline - Ultra-crisp, 100% readable over clean static navy gradient */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.14] mb-6">
+        {/* Strong Headline - Ultra-crisp, 100% readable over clean dark overlay */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.14] mb-6 drop-shadow-sm">
           Navigating Healthcare <br className="hidden sm:inline" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-teal-200 to-sky-300">
             Compliance with Confidence
@@ -38,7 +41,7 @@ const Hero = () => {
         </h1>
 
         {/* Clean Subtitle - High legibility, large font, relaxed leading */}
-        <p className="max-w-3xl text-lg sm:text-xl md:text-2xl text-slate-200 font-light leading-relaxed mb-10">
+        <p className="max-w-3xl text-lg sm:text-xl md:text-2xl text-slate-200 font-light leading-relaxed mb-10 drop-shadow-sm">
           Empowering medical practitioners and clinical healthcare groups with seamless 
           NPI registration, regulatory credentialing, and high-efficiency practice management advisory.
         </p>
@@ -61,7 +64,7 @@ const Hero = () => {
         </div>
 
         {/* Trust Verification Row */}
-        <div className="w-full border-t border-slate-800 pt-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
+        <div className="w-full border-t border-slate-700/80 pt-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-left">
           <div className="flex items-start gap-3">
             <div className="p-2.5 rounded-lg bg-teal-500/15 text-teal-400 mt-0.5">
               <ShieldCheck className="w-5 h-5" />
