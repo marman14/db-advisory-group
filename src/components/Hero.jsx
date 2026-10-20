@@ -5,14 +5,19 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-b from-[#0B132B] via-[#0A1B30] to-[#08182B] text-white"
+      className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden bg-cover bg-center text-white"
+      style={{
+        backgroundImage: `url('https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1920&q=80')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
-      {/* Elegant, static subtle healthcare gradient accent (100% clean & static, no canvas or dots) */}
+      {/* Dark Navy Overlay (82% opacity for 100% text legibility) */}
       <div 
-        className="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_50%_25%,rgba(13,148,136,0.18),transparent_75%)] pointer-events-none" 
+        className="absolute inset-0 bg-[#0B132B]/82 pointer-events-none" 
       />
       <div 
-        className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-50/5 to-transparent pointer-events-none" 
+        className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0B132B] to-transparent pointer-events-none" 
       />
 
       {/* Content Container - Breathable, generous whitespace and high contrast */}
