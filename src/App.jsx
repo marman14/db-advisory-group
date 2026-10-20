@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-slate-800 flex flex-col font-sans selection:bg-teal-500 selection:text-white">
+    <div className="min-h-screen bg-white text-[#374151] flex flex-col font-sans selection:bg-[#0D9488] selection:text-white">
       {/* Sticky Clean Header */}
       <Navbar />
 

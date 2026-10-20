@@ -46,7 +46,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full max-w-xl mb-16">
           <a
             href="#contact"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl text-base md:text-lg font-semibold text-navy-950 bg-teal-400 hover:bg-teal-300 transition-all duration-200 shadow-floating hover:shadow-teal-400/40 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl text-base md:text-lg font-semibold text-white bg-[#0D9488] hover:bg-[#0F766E] transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
           >
             <span>Get a Free Consultation</span>
             <ArrowRight className="w-5 h-5 shrink-0" />

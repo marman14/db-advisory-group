@@ -7,7 +7,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-navy-950 text-slate-300 border-t border-slate-800/80 pt-16 pb-12">
+    <footer className="bg-[#0B132B] text-slate-300 border-t border-slate-800 pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12 pb-14 border-b border-slate-800">
           
@@ -22,14 +22,14 @@ const Footer = () => {
               </span>
             </div>
             
-            <p className="text-sm text-slate-400 leading-relaxed font-light max-w-sm">
+            <p className="text-sm text-slate-300 leading-relaxed font-light max-w-sm">
               Healthcare and National Provider Identifier (NPI) advisory directed by{' '}
               <strong className="text-white font-medium">Deion Broadnax</strong>. Delivering clarity, speed, and uncompromising regulatory compliance to medical practices.
             </p>
 
-            <div className="pt-2 text-xs text-slate-500 space-y-1">
-              <div>Principal Consultant: <span className="text-slate-300">Deion Broadnax</span></div>
-              <div>Headquarters: <span className="text-slate-300">Columbus, GA</span></div>
+            <div className="pt-2 text-xs text-slate-400 space-y-1">
+              <div>Principal Consultant: <span className="text-white font-medium">Deion Broadnax</span></div>
+              <div>Headquarters: <span className="text-white font-medium">Columbus, GA</span></div>
             </div>
           </div>
 
@@ -52,6 +52,11 @@ const Footer = () => {
               <li>
                 <a href="#services" className="hover:text-white transition-colors">
                   Healthcare & NPI Services
+                </a>
+              </li>
+              <li>
+                <a href="#environment" className="hover:text-white transition-colors">
+                  Our Environment & Impact
                 </a>
               </li>
               <li>
@@ -92,7 +97,7 @@ const Footer = () => {
             <div className="pt-2">
               <a
                 href="#contact"
-                className="inline-block text-xs font-semibold px-4 py-2 rounded-lg bg-teal-500/20 text-teal-300 border border-teal-500/30 hover:bg-teal-500/30 transition-colors"
+                className="inline-block text-xs font-semibold px-5 py-2.5 rounded-xl bg-[#0D9488] hover:bg-[#0F766E] text-white transition-all shadow-sm"
               >
                 Book a Free Discovery Call
               </a>
@@ -102,16 +107,16 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
           <p>
             © {new Date().getFullYear()} DB ADVISORY GROUP. All rights reserved. Deion Broadnax, Principal. Columbus, GA.
           </p>
 
           <div className="flex items-center gap-6">
-            <span className="text-slate-600">Confidential Healthcare Advisory</span>
+            <span className="text-slate-400">Confidential Healthcare Advisory</span>
             <button
               onClick={scrollToTop}
-              className="flex items-center gap-1.5 text-slate-400 hover:text-teal-400 transition-colors p-1"
+              className="flex items-center gap-1.5 text-slate-300 hover:text-teal-300 transition-colors p-1"
               aria-label="Back to top"
             >
               <span>Back to Top</span>
