@@ -8,6 +8,8 @@ const ClinicalGallery = () => {
       category: '1-on-1 Provider Consulting',
       image:
         'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80',
+      fallbackImage:
+        'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=800&q=80',
       description:
         'Personalized guidance for physicians navigating Type 1 NPI enumeration, medical board licensing sync, and clinical scope alignment.',
       icon: Stethoscope,
@@ -17,7 +19,9 @@ const ClinicalGallery = () => {
       title: 'Multi-Specialty Clinical Teams',
       category: 'Provider Onboarding & Integration',
       image:
-        'https://images.unsplash.com/photo-1584931423298-c576fda54bd2?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1551076805-e18690c5e561?auto=format&fit=crop&w=800&q=80',
+      fallbackImage:
+        'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80',
       description:
         'Structuring Type 2 group NPI classifications and subparts for multi-provider clinics, nurse practitioners, and allied care teams.',
       icon: Users,
@@ -28,6 +32,8 @@ const ClinicalGallery = () => {
       category: 'Audit & Compliance Readiness',
       image:
         'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80',
+      fallbackImage:
+        'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=800&q=80',
       description:
         'Designing friction-free operational workflows and NPPES registry adherence for modern ambulatory clinics and care centers.',
       icon: Building,
@@ -70,6 +76,12 @@ const ClinicalGallery = () => {
                       src={item.image}
                       alt={item.title}
                       loading="lazy"
+                      onError={(e) => {
+                        if (item.fallbackImage && e.currentTarget.src !== item.fallbackImage) {
+                          e.currentTarget.onerror = null;
+                          e.currentTarget.src = item.fallbackImage;
+                        }
+                      }}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-navy-950/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
