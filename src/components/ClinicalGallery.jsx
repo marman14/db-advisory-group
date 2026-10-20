@@ -17,7 +17,7 @@ const ClinicalGallery = () => {
       title: 'Multi-Specialty Clinical Teams',
       category: 'Provider Onboarding & Integration',
       image:
-        'https://images.unsplash.com/photo-1576091160550-2173ff9e5e3c?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1584931423298-c576fda54bd2?auto=format&fit=crop&w=800&q=80',
       description:
         'Structuring Type 2 group NPI classifications and subparts for multi-provider clinics, nurse practitioners, and allied care teams.',
       icon: Users,
