@@ -1,5 +1,5 @@
 import React from 'react';
-import { UserCheck, MapPin, Building2, Shield, Target, Compass, Check } from 'lucide-react';
+import { MapPin, Shield, Target, Check } from 'lucide-react';
 
 const About = () => {
   return (
@@ -20,31 +20,31 @@ const About = () => {
         {/* Grid: Story & Leadership */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
-          {/* Left Column: Mission & Background */}
-          <div className="lg:col-span-7 space-y-6 text-base sm:text-lg text-[#374151] leading-relaxed font-normal">
-            <p className="text-[#1E293B] font-medium text-xl leading-relaxed">
+          {/* Left Column: Mission & Background with Enhanced Breathing Room & Line-Height */}
+          <div className="lg:col-span-7 space-y-7 text-base sm:text-lg text-[#374151] font-normal">
+            <p className="text-[#1E293B] font-medium text-xl leading-[1.8]">
               Founded and directed by <span className="text-[#0B132B] font-bold">Deion Broadnax</span>,{' '}
               <span className="text-[#0B132B] font-bold">DB ADVISORY GROUP</span> is a specialized healthcare 
               consultancy created to eliminate the administrative burden and regulatory complexities facing modern providers.
             </p>
 
-            <p>
+            <p className="leading-[1.8]">
               Operating from <span className="text-[#0B132B] font-semibold">Columbus, GA</span>, our firm bridges the gap between intricate federal requirements and daily clinical operations. We recognize that healthcare professionals belong with their patients—not trapped in endless National Provider Identifier (NPI) verification loops or credentialing delays.
             </p>
 
-            <p>
+            <p className="leading-[1.8]">
               Under Deion Broadnax’s guidance, DB ADVISORY GROUP has earned a reputation for precision, absolute confidentiality, and proactive compliance. Whether launching an independent clinic, expanding multi-specialty practices, or onboarding new clinical staff, we ensure your NPI credentials and operational frameworks meet 100% of state and federal benchmarks.
             </p>
 
             {/* Core Pillars */}
-            <div className="pt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div className="flex items-start gap-3 p-5 bg-[#F8FAFC] rounded-xl border border-slate-200/80 shadow-subtle">
                 <div className="p-2.5 bg-teal-50 rounded-lg text-[#0D9488] mt-0.5">
                   <Shield className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-[#0B132B] text-base">Uncompromising Compliance</h4>
-                  <p className="text-xs text-[#4B5563] mt-1">Guarding practices against NPPES discrepancies and billing delays.</p>
+                  <p className="text-xs text-[#4B5563] mt-1 leading-relaxed">Guarding practices against NPPES discrepancies and billing delays.</p>
                 </div>
               </div>
 
@@ -54,7 +54,7 @@ const About = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-[#0B132B] text-base">NPI Accuracy</h4>
-                  <p className="text-xs text-[#4B5563] mt-1">Tailored Type 1 individual and Type 2 group taxonomies.</p>
+                  <p className="text-xs text-[#4B5563] mt-1 leading-relaxed">Tailored Type 1 individual and Type 2 group taxonomies.</p>
                 </div>
               </div>
             </div>
@@ -66,8 +66,18 @@ const About = () => {
               <div className="absolute top-0 right-0 w-32 h-32 bg-teal-50 rounded-bl-full -z-0 opacity-80" />
               
               <div className="relative z-10">
-                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#0B132B] to-[#1E3A8A] text-white flex items-center justify-center font-bold text-2xl shadow-md mb-6 border-2 border-teal-400/40">
-                  DB
+                {/* Professional Portrait of Consultant (Replacing placeholder "DB" box) */}
+                <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-md mb-6 border-2 border-teal-500/30 bg-slate-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
+                    alt="Deion Broadnax"
+                    className="w-full h-full object-cover object-top"
+                    loading="lazy"
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80";
+                    }}
+                  />
                 </div>
 
                 <div className="mb-6">
@@ -101,7 +111,7 @@ const About = () => {
                 </div>
 
                 {/* Direct quote */}
-                <div className="mt-8 p-4 bg-white rounded-xl border border-slate-200/80 italic text-[#374151] text-sm">
+                <div className="mt-8 p-4 bg-white rounded-xl border border-slate-200/80 italic text-[#374151] text-sm leading-relaxed">
                   "Our mission is simple: provide physicians and clinical groups with rock-solid compliance foundations so they can focus on what matters most—delivering extraordinary patient care."
                 </div>
               </div>
